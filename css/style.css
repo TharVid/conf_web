@@ -127,10 +127,15 @@ h6 {
   color: #9195a2;
 }
 
-.section-with-bg {
+.section-with-bgs {
   background-color: #f6f7fd;
   padding-top: 20px;
 }
+.section-with-bgs li{
+  display:inline;
+}
+.section-with-bgs li:after { content:" "; letter-spacing:1em;  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwAAADsABataJCQAAABl0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC4xMkMEa+wAAAAnSURBVBhXY/Dz89MA4sNA/B9Ka4AEYQIwfBgkiCwAxjhVopnppwEApxQqhnyQ+VkAAAAASUVORK5CYII=) center center no-repeat; }
+
 
 /*--------------------------------------------------------------
 # Header
@@ -789,6 +794,77 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 10px;
 }
 
+.img-fluid{
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+
+}
+.team3{
+  text-align: center;
+}
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
+.team3 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300;
+}
+
+.team3 h1,
+.team3 h2,
+.team3 h3,
+.team3 h4,
+.team3 h5,
+.team3 h6 {
+  color: #3e4555;
+}
+
+.team3 .font-weight-medium {
+  font-weight: 500;
+}
+
+.team3 .bg-light {
+  background-color: #f4f8fa !important;
+}
+
+.team3 .subtitle {
+  color: #8d97ad;
+  line-height: 24px;
+  font-size: 20px;
+}
+
+.team3 ul {
+  margin-top: 30px;
+}
+
+.team3 h5 {
+  line-height: 22px;
+  font-size: 25px;
+}
+
+.team3 ul li a {
+  color: #8d97ad;
+  padding-right: 15px;
+  -webkit-transition: 0.1s ease-in;
+  -o-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+
+.team3 ul li a:hover {
+  -webkit-transform: translate3d(0px, -5px, 0px);
+  transform: translate3d(0px, -5px, 0px);
+  color: #316ce8;
+}
+
+.team3 .title {
+  margin: 30px 0 0 0;
+}
+
+.team3 .subtitle {
+  margin: 0 0 20px 0;
+  font-size: 16px;
+}
 /*--------------------------------------------------------------
 # Schedule Section
 --------------------------------------------------------------*/
@@ -869,6 +945,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: all ease-in-out 0.3s;
 }
 
+#keynotes .schedule-item a{
+  color: #19328e;
+}
+
+#keynotes .schedule-item a:hover{
+  color: #c12727;
+}
+
+#PaperSubmission .schedule-item a{
+  color: #19328e;
+}
+
+#PaperSubmission .schedule-item a:hover{
+  color: #c12727;
+}
+
 #schedule .schedule-item h4 {
   font-size: 18px;
   font-weight: 600;
@@ -876,15 +968,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .schedule-item h4 span {
-  font-style: italic;
-  color: #19328e;
+ 
+  color: #000000;
   font-weight: normal;
   font-size: 16px;
 }
 
 #schedule .schedule-item p {
-  font-style: italic;
-  color: #152b79;
+  
+  color: #030408;
   margin-bottom: 0;
 }
 
@@ -1712,3 +1804,4 @@ tr:nth-child(even) {
   -webkit-line-clamp: 1; /* number of lines to show */
   -webkit-box-orient: vertical;
 }
+
